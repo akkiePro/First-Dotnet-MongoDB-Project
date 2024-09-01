@@ -7,18 +7,18 @@ namespace MongoDBDemo
     {
         [BsonId] // Marks this property as the document's primary key
         [BsonRepresentation(BsonType.ObjectId)] // Represents as ObjectId in MongoDB
-        public string Id { get; set; }
+        public string? Id { get; set; }
 
         [BsonElement("Title")] // Specifies the field name in MongoDB
-        public string Title { get; set; }
+        public string? Title { get; set; }
 
         [BsonElement("Author")]
-        public string Author { get; set; }
+        public string? Author { get; set; }
 
         [BsonElement("Price")]
-        public double Price { get; set; }
+        public double? Price { get; set; }
 
         [BsonElement("PublishedDate")]
-        public DateTime PublishedDate { get; set; }
+        public DateTime? PublishedDate { get; set; }
     }
 }
